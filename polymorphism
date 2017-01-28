@@ -1,0 +1,66 @@
+class vehicle
+{
+String vehicle_name;
+String reg_number;
+int seats;
+vehicle(String a,String b,int c)
+{
+vehicle_name=a;
+reg_number=b;
+seats=c;
+}
+void display()
+{
+System.out.println("the vehicle name is:"+vehicle_name);
+System.out.println("the registration number is:"+reg_number);
+System.out.println("the number of seats are:"+seats);
+}
+}
+class twoWheeler extends vehicle
+{
+twoWheeler(String a,String b,int c)
+{
+super(a,b,c);
+}
+void display()
+{
+System.out.println("TWO WHEELER");
+super.display();
+}
+}
+class threeWheeler extends vehicle
+{
+threeWheeler(String a,String b,int c)
+{
+super(a,b,c);
+}
+void display()
+{
+System.out.println("THREE WHEELER");
+super.display();
+}
+}
+class fourWheeler extends vehicle
+{
+fourWheeler(String a,String b,int c)
+{
+super(a,b,c);
+}
+void display()
+{
+System.out.println("FOUR WHEELER");
+super.display();
+}
+}
+class polymorphism
+{
+public static void main(String args[])
+{
+twoWheeler x=new twoWheeler("BIKE","AP37AU3618",2);
+threeWheeler y=new threeWheeler("AUTO","AP31AU6758",8);
+fourWheeler z=new fourWheeler("CAR","AP37AU9087",12);
+x.display();
+y.display();
+z.display();
+}
+}
