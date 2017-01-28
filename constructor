@@ -1,0 +1,21 @@
+class constructor
+{
+int p,q,r;
+constructor()
+{
+p=7;
+}
+constructor(int m,int n)
+{
+q=m;
+r=n;
+}
+public static void main(String args[])
+{
+constructor obj1=new constructor();
+constructor obj2=new constructor(10,11);
+System.out.println("the value of p is:"+obj1.p);
+System.out.println("the value of q is:"+obj2.q);
+System.out.println("the value of c is:"+obj2.r);
+}
+}
